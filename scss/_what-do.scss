@@ -1,0 +1,89 @@
+.what-do__header {
+   padding-top: rem(113);
+   margin: 0 6.869% 0 6.869%;
+
+   @media(max-width: $tablet) {
+      padding-top: rem(60);
+   }
+}
+
+.what-do__body {
+   margin: 0 6.869% 0 6.869%;
+   display: flex;
+   padding-bottom: rem(100);
+
+   @media(max-width: $tablet) {
+      margin: 0;
+      padding-bottom: rem(50);
+   }
+
+   .what-do__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: rem(-8);
+
+      @media(max-width: $tablet) {
+         margin: rem(-7.5);
+      }
+
+      .what-do__column {
+         display: flex;
+         flex: 0 1 50%;
+         padding: rem(8);
+
+         @media(max-width: $tablet) {
+            flex: 0 1 100%;
+            padding: rem(7.5);
+         }
+      }
+   }
+}
+
+.column-what-do__wrapper {
+   position: relative;
+   padding: 69.358% 0 0 0; //===> adaptive column
+   max-height: rem(600);
+
+   @media(max-width: $tablet) {
+      padding: 55% 0 0 0; //===> adaptive column (tablet)
+   }
+}
+
+.column-what-do__body {
+   position: relative;
+   z-index: 2;
+   margin: 0 rem(45) 0 rem(30);
+
+   @media(max-width: $mobile) {
+      margin: 0 rem(20) 0 rem(15);
+   }
+
+   .column-what-do__title {
+      text-transform: uppercase;
+      line-height: 1.4;
+      letter-spacing: rem(2);
+      margin-bottom: rem(14);
+   }
+
+   .column-what-do__text {
+      line-height: 1.4;
+      margin-bottom: rem(17);
+
+      @media(max-width: $mobile) {
+         font-size: rem(14);
+      }
+   }
+}
+
+.what-do__image img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+
+   @media(max-width: $mobile) {
+      opacity: 90%;
+   }
+}

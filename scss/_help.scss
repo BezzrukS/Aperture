@@ -1,0 +1,40 @@
+.help__body {
+   padding: rem(113) 0 rem(100);
+
+   @media(max-width:$tablet) {
+      padding: rem(90) 0 rem(80);
+   }
+
+   @media(max-width:$mobile) {
+      padding: rem(70) 0 rem(60);
+   }
+
+
+   .clients__header {
+      .clients__title {
+         max-width: rem(571);
+      }
+
+      .clients__text {
+         font-size: rem(24);
+         line-height: 1.25;
+         margin-bottom: rem(22);
+      }
+   }
+}
+
+.help__wrapper {
+   display: flex;
+   justify-content: center;
+
+   .help__button {
+      margin-bottom: 0;
+
+      .button-help__text {
+         font-size: (16);
+         line-height: 1.25;
+         min-width: rem(154);
+         min-height: rem(42);
+      }
+   }
+}

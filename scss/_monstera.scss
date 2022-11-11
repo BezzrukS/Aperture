@@ -1,0 +1,35 @@
+.monstera {
+   position: relative;
+}
+
+.monstera__body {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+
+   @media(min-width:$mobile) {
+      min-height: rem(600);
+   }
+
+   .monstera__wrapper {
+      @media(max-width:$mobile) {
+         padding-top: 77%;
+      }
+
+      .monstera__header {
+         margin-right: rem(44);
+
+         .monstera__text {
+            max-width: rem(273);
+         }
+      }
+   }
+}
+
+.monstera__image {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+}
